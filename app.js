@@ -20,7 +20,7 @@ var authRoutes = require("./routes/index");
 // mongoose.connect("mongodb://localhost/yelp_camp_v11");
 // mongoose.connect("mongodb://CarlosOchoa:Kingdomhearts2!@ds129315.mlab.com:29315/yelpcamp_carlos_version");
 var dburl = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v11";
-mongoose.connnect(dburl);
+mongoose.connect(dburl);
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(flash());
