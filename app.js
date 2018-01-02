@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, "/public")));
 // seedDB();
 
 // PASSPORT CONFIGURATION
-app.use(require("express-session")({
+app.use(require("cookie-session")({
 	secret: "A secret, this is.",
 	resave: false,
 	saveUninitialized: false
