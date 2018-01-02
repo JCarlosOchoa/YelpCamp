@@ -17,7 +17,10 @@ var authRoutes = require("./routes/index");
 // var seedDB = require("./seeds");
 // mongoose.Promise = global.Promise;
 
-mongoose.connect("mongodb://localhost/yelp_camp_v11");
+
+// mongoose.connect("mongodb://localhost/yelp_camp_v11");
+mongoose.connect("mongodb://CarlosOchoa:Kingdomhearts2!@ds129315.mlab.com:29315/yelpcamp_carlos_version");
+//mongodb://CarlosOchoa:Kingdomhearts2!@ds129315.mlab.com:29315/yelpcamp_carlos_version
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(flash());
